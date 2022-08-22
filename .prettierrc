@@ -1,0 +1,23 @@
+{
+	"endOfLine": "lf",
+	"semi": false,
+	"singleQuote": true,
+	"tabWidth": 4,
+	"useTabs": true,
+	"trailingComma": "es5",
+	"printWidth": 90,
+	"overrides": [
+		{
+			"files": ["*.less"],
+			"options": {
+				"printWidth": 80
+			}
+		},
+		{
+			"files": ["*.html"],
+			"options": {
+				"printWidth": 500
+			}
+		}
+	]
+}

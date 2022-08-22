@@ -1,0 +1,28 @@
+@import '../../styles/init.less';
+
+.header {
+	margin-bottom: 4em;
+
+	.logo {
+		// 384px
+		font-size: 10px;
+		width: @logoBgWidth;
+		padding: 4em 0;
+		padding-left: ((@logoBgBoxWidth - @logoWidth) / 2);
+		background-color: @black;
+		clip-path: polygon(
+			0 0,
+			100% 0%,
+			@logoBgBottomRightPointX 100%,
+			0% 100%
+		);
+		display: flex;
+		align-items: center;
+
+		img {
+			// 280px -- 1.37
+			object-fit: scale-down;
+			max-width: @logoWidth;
+		}
+	}
+}

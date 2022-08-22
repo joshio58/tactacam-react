@@ -1,0 +1,17 @@
+.border(@w:1px, @c: hsla(0,0%,0%,0.9)) {
+	border: @w solid @c;
+}
+
+.bs(@x: 0,@y: 3px,@b: 6px,@s: 0, @o:0.5, @i:boolean(false) ) {
+	box-shadow: if(
+		(@i = true),
+		inset @x @y @b @s hsla(0, 0%, 10%, @o),
+		@x @y @b @s hsla(0, 0%, 10%, @o)
+	);
+}
+
+.grid() {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 10%));
+	gap: @gap;
+}

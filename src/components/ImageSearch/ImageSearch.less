@@ -1,0 +1,17 @@
+@import '../../styles/init.less';
+
+.results {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 1em;
+	gap: @gap;
+}
+
+.results__item {
+	flex: content;
+
+	&:last-child {
+		flex: 0 0 initial;
+	}
+}

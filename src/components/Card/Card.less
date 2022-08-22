@@ -1,0 +1,45 @@
+@import '../../styles/init.less';
+
+.card {
+	.border(@w: 3px);
+	.bs;
+	width: 100%;
+	padding: 1em;
+	border-radius: 1em;
+	transition: border-color 250ms ease;
+	.comfortaa;
+
+	&:hover {
+		cursor: pointer;
+		.border(@w: 3px, @c: hsla(80, 89%, 44%, 1));
+	}
+
+	.image {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+
+		img {
+			object-fit: scale-down;
+			max-width: 100%;
+			height: 20em;
+		}
+	}
+}
+
+.card__content {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.5em;
+}
+
+.card__footer {
+	border: 2px solid @green;
+	border-radius: 1em;
+	padding: 1em;
+
+	span {
+		margin-right: 0.5em;
+	}
+}
